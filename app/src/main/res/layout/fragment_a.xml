@@ -3,23 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    android:background="#2196F3"
-    tools:context=".example1.HomeFragment">
+    android:background="#BA7575"
+    android:gravity="center"
+    tools:context=".example2.FragmentA">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:text="Home Fragment" />
+        android:text="This is home"
+        android:textSize="20sp"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="goto news"
-        android:id="@+id/btn"/>
+        android:text="go to fragmentB"
+        android:id="@+id/btn_goto_fragment_b"/>
 
 </LinearLayout>

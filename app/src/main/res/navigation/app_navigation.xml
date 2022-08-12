@@ -7,17 +7,30 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.bottomnavigationdrawerjetpack.HomeFragment"
+        android:name="com.example.bottomnavigationdrawerjetpack.example1.HomeFragment"
         android:label="home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_newsFragment"
+            app:destination="@id/newsFragment"
+
+
+            app:restoreState="true"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToSaveState="true" />
+        <!-- these last three lines added to remove bug conflicting
+         bottom navigation view with action inside fragment-->
+
+
+    </fragment>
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.example.bottomnavigationdrawerjetpack.NewsFragment"
+        android:name="com.example.bottomnavigationdrawerjetpack.example1.NewsFragment"
         android:label="news"
         tools:layout="@layout/fragment_news" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.bottomnavigationdrawerjetpack.ProfileFragment"
+        android:name="com.example.bottomnavigationdrawerjetpack.example1.ProfileFragment"
         android:label="profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

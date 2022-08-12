@@ -1,4 +1,4 @@
-package com.example.bottomnavigationdrawerjetpack
+package com.example.bottomnavigationdrawerjetpack.example1
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
