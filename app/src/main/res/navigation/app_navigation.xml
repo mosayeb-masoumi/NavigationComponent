@@ -18,8 +18,7 @@
             app:restoreState="true"
             app:popUpTo="@id/homeFragment"
             app:popUpToSaveState="true" />
-        <!-- these last three lines added to remove bug conflicting
-         bottom navigation view with action inside fragment-->
+        <!-- remove bug action inside fragment when using bottom navigation view-->
 
 
     </fragment>
